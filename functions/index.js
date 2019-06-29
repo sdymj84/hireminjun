@@ -10,8 +10,8 @@ admin.initializeApp()
 
 let transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
-  // port: 465,
-  // secure: true,
+  port: 465,
+  secure: true,
   auth: {
     type: 'OAuth2',
     user: 'hireminjun@gmail.com',
