@@ -44,7 +44,11 @@ const StyledContainer = styled(Container)`
   }
   .contact {
     font-size: 1.2em;
+    .get-in-touch {
+      margin-bottom: 2em;
+    }
   }
+  
 `
 const Section = styled.div`
   margin: 2em auto;
@@ -67,7 +71,6 @@ const DotSeparator = styled.hr`
 const Image = styled.img`
   width: 100%;
 `
-
 
 const App = () => {
   return (
@@ -176,7 +179,7 @@ const App = () => {
       <Section className="contact">
         <div className="title">Contact</div>
         <Row>
-          <Col xl={6} lg={12}>
+          <Col xl={6} lg={12} className="get-in-touch">
             <div style={{ fontWeight: 'bold' }}>Get in Touch</div><br />
             <div>14220 Conser St. Overland Park, KS 66223</div>
             <div>sdymj84@gmail.com</div>

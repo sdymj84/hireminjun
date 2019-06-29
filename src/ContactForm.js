@@ -1,14 +1,24 @@
 import React from 'react'
 import { Form, Button } from 'react-bootstrap'
 import styled from 'styled-components'
+import axios from 'axios'
 
 const StyledForm = styled(Form)`
   text-align: left;
 `
 
 const ContactForm = () => {
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    console.log("submitted")
+    // const result = await axios.get('http://localhost:5001/hireminjun/us-central1/sendEmail')
+    const result = await axios.get('https://us-central1-hireminjun.cloudfunctions.net/sendEmail')
+    console.log(result)
+  }
+
   return (
-    <StyledForm>
+    <StyledForm onSubmit={handleSubmit}>
       <Form.Group controlId="name">
         <Form.Label>Name <span>(required)</span></Form.Label>
         <Form.Control required size="lg" type="text" placeholder="Enter name" />
