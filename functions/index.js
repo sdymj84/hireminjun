@@ -25,10 +25,12 @@ let transporter = nodemailer.createTransport({
 exports.sendEmail = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
     const mailOptions = {
-      from: 'hiremanager@uber.com',
+      from: req.query.email,
       to: 'sdymj84@gmail.com',
-      subject: "I'm interested in you",
-      html: 'Hi, nice to meet you',
+      subject: `New message from ${req.query.name} on hireminjun.com`,
+      html: `<div>${req.query.email}</div>
+        <br/><br/><div>${req.query.website}</div>
+        <br/><br/><pre style="font-size: 1.5em">${req.query.message}</pre>`
     }
 
     return transporter.sendMail(mailOptions, (err, info) => {
