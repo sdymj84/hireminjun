@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import styled from 'styled-components'
+import JellyTree from './Portfolios/JellyTree'
 import Apart from './Portfolios/Apart'
 import TravelBlog from './Portfolios/TravelBlog'
 import Calculator from './Portfolios/Calculator'
@@ -66,7 +67,7 @@ const DotSeparator = styled.hr`
   border: none;
   border-top: 5px dotted black;
   width: 150px;
-  margin: 2em auto;
+  margin: 3em auto;
 `
 const Image = styled.img`
   width: 100%;
@@ -94,6 +95,9 @@ const App = () => {
         <div>(From the most recent to the oldest)</div>
         <DotSeparator />
 
+        <JellyTree />
+        <DotSeparator />
+
         <Apart />
         <DotSeparator />
 
@@ -117,7 +121,7 @@ const App = () => {
             <h3>Business Project</h3>
             <div>
               I built the real world business project like
-              Apart Management Portal, not just play around and
+              JellyTree E-Commerce and Apart Management Portal, not just play around and
               build personal website.
             </div>
           </Col>
@@ -164,7 +168,7 @@ const App = () => {
               In the last one year, I’ve studied with a lot of videos from Youtube, Pluralsight, Udemy, etc. and I’ve accomplished several projects that you can see on my portfolio. I’m quite confident that I’m ready to work as a web developer.
             </div><br />
             <div>
-              I have quite a list of hobbies. My wife calls me a hobby collector. I like playing guitar, piano, sometimes compose songs, watch movies with AMC stub-a-list, play billiards (3-cushion), cook Korean food, and web development.
+              I have quite a list of hobbies. My wife calls me a hobby collector. I like playing guitar, piano, sometimes compose songs, watch movies, play billiards (3-cushion), cook Korean food, and make videos.
             </div><br />
             <div>Can’t wait to start my new journey</div>
             <div>and become the person who “Do what your love”!
