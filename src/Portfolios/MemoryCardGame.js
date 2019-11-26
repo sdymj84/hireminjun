@@ -1,16 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Carousel } from "react-bootstrap"
-import mcg from '../assets/Memory Card Game.png'
+import React from "react";
+import styled from "styled-components";
+import { Carousel } from "react-bootstrap";
+import mcg from "../assets/Memory Card Game.png";
 
 const Container = styled.div`
   text-align: left;
   font-weight: 400;
 
-  h2 {
-    margin-bottom: 0;
-    font-weight: bold;
-  }
   .link {
     margin: 1em 0;
   }
@@ -26,10 +22,10 @@ const Container = styled.div`
   .skill {
     margin: 1em 0;
   }
-`
+`;
 const Image = styled.img`
   width: 100%;
-`
+`;
 
 const MemoryCardGame = () => {
   return (
@@ -41,17 +37,16 @@ const MemoryCardGame = () => {
           <a href="https://github.com/sdymj84/memory-card-game">Github page</a>
         </div>
         <div>
-          Demo : {' '}
-          <a href="https://sdymj84.github.io/memory-card-game//">Memory Card Game</a>
+          Demo :{" "}
+          <a href="https://sdymj84.github.io/memory-card-game//">
+            Memory Card Game
+          </a>
         </div>
       </div>
 
       <Carousel>
         <Carousel.Item>
-          <Image
-            src={mcg}
-            alt="Game screen"
-          />
+          <Image src={mcg} alt="Game screen" />
         </Carousel.Item>
       </Carousel>
 
@@ -61,7 +56,7 @@ const MemoryCardGame = () => {
         </ul>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default MemoryCardGame
+export default MemoryCardGame;

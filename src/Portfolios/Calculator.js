@@ -1,16 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Carousel } from "react-bootstrap"
-import cal from '../assets/calculator.png'
+import React from "react";
+import styled from "styled-components";
+import { Carousel } from "react-bootstrap";
+import cal from "../assets/calculator.png";
 
 const Container = styled.div`
   text-align: left;
   font-weight: 400;
 
-  h2 {
-    margin-bottom: 0;
-    font-weight: bold;
-  }
   .link {
     margin: 1em 0;
   }
@@ -26,10 +22,10 @@ const Container = styled.div`
   .skill {
     margin: 1em 0;
   }
-`
+`;
 const Image = styled.img`
   width: 100%;
-`
+`;
 
 const Calculator = () => {
   return (
@@ -41,17 +37,14 @@ const Calculator = () => {
           <a href="https://github.com/sdymj84/calculator.react">Github page</a>
         </div>
         <div>
-          Demo : {' '}
+          Demo :{" "}
           <a href="https://travel-blog-366f7.firebaseapp.com/">Calculator</a>
         </div>
       </div>
 
       <Carousel>
         <Carousel.Item>
-          <Image
-            src={cal}
-            alt="Calculator"
-          />
+          <Image src={cal} alt="Calculator" />
         </Carousel.Item>
       </Carousel>
 
@@ -61,7 +54,7 @@ const Calculator = () => {
         </ul>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default Calculator
+export default Calculator;

@@ -1,14 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   text-align: left;
   font-weight: 400;
 
-  h2 {
-    margin-bottom: 0;
-    font-weight: bold;
-  }
   .iframe-container {
     position: relative;
     overflow: hidden;
@@ -38,7 +34,7 @@ const Container = styled.div`
   .skill {
     margin: 1em 0;
   }
-`
+`;
 
 const Apart = () => {
   return (
@@ -51,16 +47,22 @@ const Apart = () => {
           <a href="https://github.com/sdymj84/apt-client">Github page</a>
         </div>
         <div>
-          Demo : {' '}
-          <a href="http://apt-client-manager2.s3-website.us-east-2.amazonaws.com/">Manager</a>/{' '}
-          <a href="http://apt-client-resident.s3-website.us-east-2.amazonaws.com/">Resident</a>
+          Demo :{" "}
+          <a href="http://apt-client-manager2.s3-website.us-east-2.amazonaws.com/">
+            Manager
+          </a>
+          /{" "}
+          <a href="http://apt-client-resident.s3-website.us-east-2.amazonaws.com/">
+            Resident
+          </a>
         </div>
       </div>
 
       <div className="iframe-container">
         <iframe
           title="apart-video"
-          src="https://youtube.com/embed/j66d0ItzLA4"></iframe>
+          src="https://youtube.com/embed/j66d0ItzLA4"
+        ></iframe>
       </div>
 
       <div className="skill">
@@ -70,11 +72,14 @@ const Apart = () => {
           <li>AWS Amplify to use AWS services from client</li>
           <li>AWS : DynamoDB, Cognito, S3, Lambda, API Gateway, CloudWatch</li>
           <li>Design : react-bootstrap, styled-components, react-pose</li>
-          <li>ETC : moment, react-datepicker, react-collapsing-table, react-icons, etc.</li>
+          <li>
+            ETC : moment, react-datepicker, react-collapsing-table, react-icons,
+            etc.
+          </li>
         </ul>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default Apart
+export default Apart;

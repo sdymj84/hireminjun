@@ -1,19 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Carousel } from "react-bootstrap"
-import wwn1 from '../assets/wwn1.png'
-import wwn2 from '../assets/wwn2.png'
-import wwn3 from '../assets/wwn3.jpg'
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+import React from "react";
+import styled from "styled-components";
+import { Carousel } from "react-bootstrap";
+import wwn1 from "../assets/wwn1.png";
+import wwn2 from "../assets/wwn2.png";
+import wwn3 from "../assets/wwn3.jpg";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Container = styled.div`
   text-align: left;
   font-weight: 400;
 
-  h2 {
-    margin-bottom: 0;
-    font-weight: bold;
-  }
   .link {
     margin: 1em 0;
   }
@@ -29,10 +25,10 @@ const Container = styled.div`
   .skill {
     margin: 1em 0;
   }
-`
+`;
 const Image = styled.img`
   width: 100%;
-`
+`;
 
 const WeeklyWorkNote = () => {
   return (
@@ -44,31 +40,25 @@ const WeeklyWorkNote = () => {
           <a href="https://github.com/sdymj84/weekly-work-note">Github page</a>
         </div>
         <div>
-          Demo : {' '}
-          <a href="https://worknote.herokuapp.com/users/login/">Weekly Work Note</a>
+          Demo :{" "}
+          <a href="https://worknote.herokuapp.com/users/login/">
+            Weekly Work Note
+          </a>
         </div>
       </div>
 
       <Carousel
         prevIcon={<IoIosArrowBack size="1.5em" color="white" />}
-        nextIcon={<IoIosArrowForward size="1.5em" color="white" />}>
+        nextIcon={<IoIosArrowForward size="1.5em" color="white" />}
+      >
         <Carousel.Item>
-          <Image
-            src={wwn1}
-            alt="Note main screen"
-          />
+          <Image src={wwn1} alt="Note main screen" />
         </Carousel.Item>
         <Carousel.Item>
-          <Image
-            src={wwn2}
-            alt="Wallpaper option screen"
-          />
+          <Image src={wwn2} alt="Wallpaper option screen" />
         </Carousel.Item>
         <Carousel.Item>
-          <Image
-            src={wwn3}
-            alt="Sign in screen"
-          />
+          <Image src={wwn3} alt="Sign in screen" />
         </Carousel.Item>
       </Carousel>
 
@@ -81,7 +71,7 @@ const WeeklyWorkNote = () => {
         </ul>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default WeeklyWorkNote
+export default WeeklyWorkNote;

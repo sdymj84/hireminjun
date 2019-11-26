@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700|Dosis:400,800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Dosis:400,800&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+  font-family: "Catamaran", Arial, Helvetica, sans-serif;
   font-size: 18px;
-  background-color: #FAF8F5;
+  background-color: #faf8f5;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #2b4768;
 }
 
 /* * {
   outline: 1px solid red;
 } */
-
-
