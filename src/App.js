@@ -123,27 +123,27 @@ const App = () => {
           <Col xl={4} lg={12}>
             <h3>Business Project</h3>
             <div>
-              I built the real world business project like JellyTree E-Commerce
+              I built the real-world business project like JellyTree E-Commerce
               and Apart Management Portal, not just play around and build
-              personal website.
+              personal websites.
             </div>
           </Col>
 
           <Col xl={4} lg={12}>
             <h3>Related Work Experiences</h3>
             <div>
-              Have work experience as a s/w test engineer at Samsung Mobile for
-              6 years, which makes me not only be a developer with tester’s
-              mindset but also be a great team member who knows how to work in a
-              team.
+              I have work experience as a software test engineer at Samsung
+              Mobile for 7 years, which makes me not only be a developer with
+              tester’s mindset but also be a great team member who knows how to
+              work in a team.
             </div>
           </Col>
 
           <Col xl={4} lg={12}>
             <h3>Self Motivated</h3>
             <div>
-              Implemented test automation script for the team and made it usable
-              for real work without any supervision.
+              I implemented test automation scripts for the team and made it
+              usable for real work without any supervision.
             </div>
           </Col>
         </Row>
