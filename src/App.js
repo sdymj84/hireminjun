@@ -16,10 +16,13 @@ const StyledContainer = styled(Container)`
     font-weight: bold;
     margin: 1em 0;
     text-align: center;
-    color: #2b4768;
+    color: #4d6179;
   }
   .intro {
     font-size: 2.2em;
+    /* background-color: #4d6179;
+    color: white;
+    padding: 2em; */
   }
   .portfolio {
     font-size: 1.5em;
@@ -78,14 +81,16 @@ const App = () => {
   return (
     <StyledContainer>
       <Section className="name">
-        <TitleName>Minjun Youn</TitleName>
-        <div>Portfolio for React Developer</div>
+        <TitleName>MINJUN YOUN</TitleName>
+        <div style={{ fontSize: 24, color: "#48b8e7", fontWeight: "bold" }}>
+          FULL STACK DEVELOPER
+        </div>
       </Section>
       <Separator />
       <Section className="intro">
         <div>Hi!</div>
-        <div>I’m looking for a React developer job.</div>
-        <div>Please check out my work and get in touch if interested.</div>
+        <div>I’m looking for a Full Stack developer position.</div>
+        <div>Please check out my work and feel free to reach me.</div>
       </Section>
       <Separator />
       <Section className="portfolio">
@@ -155,38 +160,28 @@ const App = () => {
           <Col xl={6} lg={12}>
             <br />
             <div>
-              I’ve been working as a test engineer for several years but I’ve
-              always had passion for development.
+              I’ve been working for Samsung Mobile Kansas for 7 years in the dev
+              team as a test engineer. I’ve participated in writing automation
+              test scripts for the company level framework, launching flagship
+              models and client meetings with Sprint. These experiences helped
+              me to develop communication skills and become a team member with
+              flexibility & responsibility.
             </div>
             <br />
             <div>
-              I started implementing test automation script when no one in my
-              team was interested and eventually made my team use it for actual
-              work.
+              Especially from the experience of writing the test script, I’ve
+              come to realize that writing code and solving problems are what I
+              love to do most! And it made me decide to change my career as a
+              full- stack developer.
             </div>
             <br />
             <div>
-              Since I decided to be a web developer, I made a plan to study 10
-              hours a week and it turned out I was having so much fun that I
-              always wanted more!
+              In the past two years, I’ve developed my web skills in addition to
+              my knowledge from my BS in Computer Science. Working on various
+              collaboration projects has given me an invaluable foundation and
+              now I am eager to put my energy and skills to work as a full-stack
+              developer.
             </div>
-            <br />
-            <div>
-              In the last one to two years, I’ve studied with a lot of videos
-              from Youtube, Pluralsight, Udemy, etc. and I’ve accomplished
-              several projects that you can see on my portfolio. I’m quite
-              confident that I’m ready to work as a web developer.
-            </div>
-            <br />
-            <div>
-              I have quite a list of hobbies. My wife calls me a hobby
-              collector. I like playing guitar, piano, sometimes compose songs,
-              watch movies, play billiards (3-cushion), cook Korean food, and
-              make videos.
-            </div>
-            <br />
-            <div>Can’t wait to start my new journey</div>
-            <div>and become the person who “Do what your love”!</div>
             <br />
           </Col>
         </Row>
