@@ -160,27 +160,22 @@ const App = () => {
           <Col xl={6} lg={12}>
             <br />
             <div>
-              I’ve been working for Samsung Mobile Kansas for 7 years in the dev
-              team as a test engineer. I’ve participated in writing automation
-              test scripts for the company level framework, launching flagship
-              models and client meetings with Sprint. These experiences helped
-              me to develop communication skills and become a team member with
-              flexibility & responsibility.
+              I started my first dev job at the beginning of 2020 as someone transitioning from a QA role into product development. 
+              I very quickly became a productive and indispensable member of the Engineering team. 
+              I joined the small 2-person team focused on React migration of the front-end system. 
+              But over time those other 2 people kept getting re-assigned to other work, leaving me to do most 
+              of the React migration work in 2020 - and I did a great job. I got up to speed on React very quickly 
+              and was responsible for establishing much of the ground-work for how the team would do the migration 
+              from Angular to React. I also wrote good documentation and was responsible for getting others up to 
+              speed on how they can convert parts of the UI to React. I even took a lead role in designing and implementing in React, 
+                the new feature that the Customer Success team has needed for years. 
             </div>
             <br />
             <div>
-              Especially from the experience of writing the test script, I’ve
-              come to realize that writing code and solving problems are what I
-              love to do most! And it made me decide to change my career as a
-              full- stack developer.
-            </div>
-            <br />
-            <div>
-              In the past two years, I’ve developed my web skills in addition to
-              my knowledge from my BS in Computer Science. Working on various
-              collaboration projects has given me an invaluable foundation and
-              now I am eager to put my energy and skills to work as a full-stack
-              developer.
+              My manager told me that he has been very impressed with my performance in 2020. 
+  I was happy to jump in and help anyone that needs assistance. I have quickly grown from a junior developer 
+  to a key member of the Haystax engineering team. My work on the React migration has made me a critical member 
+  of the team and our company’s success is now directly related to my efforts.
             </div>
             <br />
           </Col>
@@ -195,9 +190,9 @@ const App = () => {
           <Col xl={6} lg={12} className="get-in-touch">
             <div style={{ fontWeight: "bold" }}>Get in Touch</div>
             <br />
-            <div>14220 Conser St. Overland Park, KS 66223</div>
+            <div>1525 Station Center Blvd., Suwanee, GA 30024</div>
             <div>sdymj84@gmail.com</div>
-            <div>913-353-6799</div>
+            <div>816-892-0868</div>
           </Col>
           <Col xl={6} lg={12}>
             <div style={{ fontWeight: "bold" }}>Send Me a Message</div>
