@@ -16,10 +16,13 @@ const StyledContainer = styled(Container)`
     font-weight: bold;
     margin: 1em 0;
     text-align: center;
-    color: #2b4768;
+    color: #005387;
   }
   .intro {
     font-size: 2.2em;
+    /* background-color: #005387;
+    padding: 2em;
+    color: white; */
   }
   .portfolio {
     font-size: 1.5em;
@@ -78,14 +81,16 @@ const App = () => {
   return (
     <StyledContainer>
       <Section className="name">
-        <TitleName>Minjun Youn</TitleName>
-        <div>Portfolio for React Developer</div>
+        <TitleName>MINJUN YOUN</TitleName>
+        <div style={{ color: "#48b8e7", fontWeight: "bold", fontSize: "24px" }}>
+          FULL STACK DEVELOPER
+        </div>
       </Section>
       <Separator />
       <Section className="intro">
         <div>Hi!</div>
-        <div>I’m looking for a React developer job.</div>
-        <div>Please check out my work and get in touch if interested.</div>
+        <div>I’m looking for a Full Stack developer job.</div>
+        <div>Please check out my work and feel free to reach me.</div>
       </Section>
       <Separator />
       <Section className="portfolio">

@@ -1,26 +1,27 @@
-import React, { useState } from 'react'
-import { Form, Alert } from 'react-bootstrap'
-import styled from 'styled-components'
-import axios from 'axios'
-import LoaderButton from './components/LoaderButton'
-import posed from 'react-pose'
+import React, { useState } from "react";
+import { Form, Alert } from "react-bootstrap";
+import styled from "styled-components";
+import axios from "axios";
+import LoaderButton from "./components/LoaderButton";
+import posed from "react-pose";
 
 const StyledForm = styled(Form)`
   text-align: left;
-  input, textarea {
+  input,
+  textarea {
     box-shadow: none;
   }
-`
+`;
 const PosedAlert = posed.div({
   hidden: {
     opacity: 0,
-    y: '-100%',
+    y: "-100%"
   },
   visible: {
     opacity: 1,
-    y: 0,
+    y: 0
   }
-})
+});
 
 const StyledAlertSuccess = styled(PosedAlert)`
   position: fixed;
@@ -34,7 +35,7 @@ const StyledAlertSuccess = styled(PosedAlert)`
     left: 10%;
     margin-left: 0;
   }
-`
+`;
 const StyledAlertError = styled(PosedAlert)`
   position: fixed;
   width: 600px;
@@ -47,64 +48,65 @@ const StyledAlertError = styled(PosedAlert)`
     left: 10%;
     margin-left: 0;
   }
-`
+`;
 
 const ContactForm = () => {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [website, setWebsite] = useState("")
-  const [message, setMessage] = useState("")
-  const [isLoading, setIsLoading] = useState(false)
-  const [isSent, setIsSent] = useState(false)
-  const [isError, setIsError] = useState(false)
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [website, setWebsite] = useState("");
+  const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [isError, setIsError] = useState(false);
 
-  const handleNameChange = (e) => {
-    setName(e.target.value)
-  }
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value)
-  }
-  const handleWebsiteChange = (e) => {
-    setWebsite(e.target.value)
-  }
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value)
-  }
+  const handleNameChange = e => {
+    setName(e.target.value);
+  };
+  const handleEmailChange = e => {
+    setEmail(e.target.value);
+  };
+  const handleWebsiteChange = e => {
+    setWebsite(e.target.value);
+  };
+  const handleMessageChange = e => {
+    setMessage(e.target.value);
+  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
+  const handleSubmit = async e => {
+    e.preventDefault();
     try {
-      setIsLoading(true)
-      await axios.get('https://us-central1-hireminjun.cloudfunctions.net/sendEmail', {
-        params: { name, email, website, message }
-      })
+      setIsLoading(true);
+      await axios.get(
+        "https://us-central1-hireminjun.cloudfunctions.net/sendEmail",
+        {
+          params: { name, email, website, message }
+        }
+      );
 
-      setIsLoading(false)
-      setIsSent(true)
+      setIsLoading(false);
+      setIsSent(true);
       setTimeout(() => {
-        setIsSent(false)
+        setIsSent(false);
       }, 3000);
-      setName("")
-      setEmail("")
-      setWebsite("")
-      setMessage("")
+      setName("");
+      setEmail("");
+      setWebsite("");
+      setMessage("");
     } catch (e) {
-      setIsLoading(false)
-      setIsError(true)
+      setIsLoading(false);
+      setIsError(true);
       setTimeout(() => {
-        setIsError(false)
+        setIsError(false);
       }, 3000);
     }
-  }
+  };
 
-  console.log(isSent)
+  console.log(isSent);
 
   return (
     <StyledForm onSubmit={handleSubmit}>
       <StyledAlertSuccess pose={isSent ? "visible" : "hidden"}>
-        <Alert variant="success">
-          Email has sent successfully!
-        </Alert>
+        <Alert variant="success">Email has sent successfully!</Alert>
       </StyledAlertSuccess>
       <StyledAlertError pose={isError ? "visible" : "hidden"}>
         <Alert variant="danger">
@@ -112,48 +114,69 @@ const ContactForm = () => {
         </Alert>
       </StyledAlertError>
       <Form.Group controlId="name">
-        <Form.Label>Name <span>(required)</span></Form.Label>
-        <Form.Control required
-          size="lg" type="text"
+        <Form.Label>
+          Name <span>(required)</span>
+        </Form.Label>
+        <Form.Control
+          required
+          size="lg"
+          type="text"
           placeholder="Enter name"
           onChange={handleNameChange}
-          value={name} />
+          value={name}
+        />
       </Form.Group>
 
       <Form.Group controlId="email">
-        <Form.Label>Email <span>(required)</span></Form.Label>
-        <Form.Control required
-          size="lg" type="email"
+        <Form.Label>
+          Email <span>(required)</span>
+        </Form.Label>
+        <Form.Control
+          required
+          size="lg"
+          type="email"
           placeholder="Enter email"
           onChange={handleEmailChange}
-          value={email} />
+          value={email}
+        />
       </Form.Group>
 
       <Form.Group controlId="website">
         <Form.Label>Website</Form.Label>
         <Form.Control
-          size="lg" type="text"
+          size="lg"
+          type="text"
           placeholder="Enter website"
           onChange={handleWebsiteChange}
-          value={website} />
+          value={website}
+        />
       </Form.Group>
 
       <Form.Group controlId="message">
-        <Form.Label>Message <span>(required)</span></Form.Label>
-        <Form.Control required
-          size="lg" as="textarea" rows="3"
+        <Form.Label>
+          Message <span>(required)</span>
+        </Form.Label>
+        <Form.Control
+          required
+          size="lg"
+          as="textarea"
+          rows="3"
           onChange={handleMessageChange}
-          value={message} />
+          value={message}
+        />
       </Form.Group>
 
       <LoaderButton
-        size="lg" variant="primary" type="submit"
+        size="lg"
+        variant="outline-success"
+        type="submit"
         isLoading={isLoading}
         text="SEND"
         loadingText="SENDING.."
-        disabled={isLoading} />
+        disabled={isLoading}
+      />
     </StyledForm>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;
