@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
+import Haystax from "./Portfolios/Haystax";
 import JellyTree from "./Portfolios/JellyTree";
 import Apart from "./Portfolios/Apart";
 import TravelBlog from "./Portfolios/TravelBlog";
@@ -98,6 +99,9 @@ const App = () => {
         <div>(From the most recent to the oldest)</div>
         <DotSeparator />
 
+        <Haystax />
+        <DotSeparator />
+
         <JellyTree />
         <DotSeparator />
 
@@ -121,29 +125,32 @@ const App = () => {
         <div className="title">Reasons to hire me</div>
         <Row>
           <Col xl={4} lg={12}>
-            <h3>Business Project</h3>
+            <h3>Go above and beyond</h3>
             <div>
-              I built the real-world business project like JellyTree E-Commerce
-              and Apart Management Portal, not just play around and build
-              personal websites.
-            </div>
-          </Col>
-
-          <Col xl={4} lg={12}>
-            <h3>Related Work Experiences</h3>
-            <div>
-              I have work experience as a software test engineer at Samsung
-              Mobile for 7 years, which makes me not only be a developer with
-              tester’s mindset but also be a great team member who knows how to
-              work in a team.
+              I joined the small team for a React migration project, ended up
+              leading the project, and resulted in great success. There wasn't a
+              unit test for the front-end so I started implementing them,
+              although it wasn't assigned to me as a task.
             </div>
           </Col>
 
           <Col xl={4} lg={12}>
             <h3>Self Motivated</h3>
             <div>
-              I implemented test automation scripts for the team and made it
-              usable for real work without any supervision.
+              Became a self-taught web developer with after-hour intensive study
+              while working as a full-time test engineer. And I have quickly
+              grown from a junior developer to a key member of the team who led
+              the React migration project within an year.
+            </div>
+          </Col>
+
+          <Col xl={4} lg={12}>
+            <h3>Developer with Tester's mindset</h3>
+            <div>
+              I have work experience as a software test engineer at Samsung
+              Mobile for 7 years, which makes me a developer with tester’s
+              mindset trying to find issues as early as possible and write a
+              clean and neat code.
             </div>
           </Col>
         </Row>
@@ -198,7 +205,7 @@ const App = () => {
             <div style={{ fontWeight: "bold" }}>Get in Touch</div>
             <br />
             <div>1525 Station Center Blvd., Suwanee, GA 30024</div>
-            <div>sdymj84@gmail.com</div>
+            <div>hireminjuny@gmail.com</div>
             <div>816-892-0868</div>
           </Col>
           <Col xl={6} lg={12}>
