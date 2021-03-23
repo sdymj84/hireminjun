@@ -16,13 +16,13 @@ const StyledContainer = styled(Container)`
     font-weight: bold;
     margin: 1em 0;
     text-align: center;
-    color: #005387;
+    color: #4d6179;
   }
   .intro {
     font-size: 2.2em;
-    /* background-color: #005387;
-    padding: 2em;
-    color: white; */
+    /* background-color: #4d6179;
+    color: white;
+    padding: 2em; */
   }
   .portfolio {
     font-size: 1.5em;
@@ -82,14 +82,14 @@ const App = () => {
     <StyledContainer>
       <Section className="name">
         <TitleName>MINJUN YOUN</TitleName>
-        <div style={{ color: "#48b8e7", fontWeight: "bold", fontSize: "24px" }}>
+        <div style={{ fontSize: 24, color: "#48b8e7", fontWeight: "bold" }}>
           FULL STACK DEVELOPER
         </div>
       </Section>
       <Separator />
       <Section className="intro">
         <div>Hi!</div>
-        <div>I’m looking for a Full Stack developer job.</div>
+        <div>I’m looking for a Full Stack developer position.</div>
         <div>Please check out my work and feel free to reach me.</div>
       </Section>
       <Separator />
@@ -123,27 +123,27 @@ const App = () => {
           <Col xl={4} lg={12}>
             <h3>Business Project</h3>
             <div>
-              I built the real world business project like JellyTree E-Commerce
+              I built the real-world business project like JellyTree E-Commerce
               and Apart Management Portal, not just play around and build
-              personal website.
+              personal websites.
             </div>
           </Col>
 
           <Col xl={4} lg={12}>
             <h3>Related Work Experiences</h3>
             <div>
-              Have work experience as a s/w test engineer at Samsung Mobile for
-              6 years, which makes me not only be a developer with tester’s
-              mindset but also be a great team member who knows how to work in a
-              team.
+              I have work experience as a software test engineer at Samsung
+              Mobile for 7 years, which makes me not only be a developer with
+              tester’s mindset but also be a great team member who knows how to
+              work in a team.
             </div>
           </Col>
 
           <Col xl={4} lg={12}>
             <h3>Self Motivated</h3>
             <div>
-              Implemented test automation script for the team and made it usable
-              for real work without any supervision.
+              I implemented test automation scripts for the team and made it
+              usable for real work without any supervision.
             </div>
           </Col>
         </Row>
@@ -160,38 +160,30 @@ const App = () => {
           <Col xl={6} lg={12}>
             <br />
             <div>
-              I’ve been working as a test engineer for several years but I’ve
-              always had passion for development.
+              I started my first dev job at the beginning of 2020 as someone
+              transitioning from a QA role into product development. I very
+              quickly became a productive and indispensable member of the
+              Engineering team. I joined the small 2-person team focused on
+              React migration of the front-end system. But over time those other
+              2 people kept getting re-assigned to other work, leaving me to do
+              most of the React migration work in 2020 - and I did a great job.
+              I got up to speed on React very quickly and was responsible for
+              establishing much of the ground-work for how the team would do the
+              migration from Angular to React. I also wrote good documentation
+              and was responsible for getting others up to speed on how they can
+              convert parts of the UI to React. I even took a lead role in
+              designing and implementing in React, the new feature that the
+              Customer Success team has needed for years.
             </div>
             <br />
             <div>
-              I started implementing test automation script when no one in my
-              team was interested and eventually made my team use it for actual
-              work.
+              My manager told me that he has been very impressed with my
+              performance in 2020. I was happy to jump in and help anyone that
+              needs assistance. I have quickly grown from a junior developer to
+              a key member of the Haystax engineering team. My work on the React
+              migration has made me a critical member of the team and our
+              company’s success is now directly related to my efforts.
             </div>
-            <br />
-            <div>
-              Since I decided to be a web developer, I made a plan to study 10
-              hours a week and it turned out I was having so much fun that I
-              always wanted more!
-            </div>
-            <br />
-            <div>
-              In the last one to two years, I’ve studied with a lot of videos
-              from Youtube, Pluralsight, Udemy, etc. and I’ve accomplished
-              several projects that you can see on my portfolio. I’m quite
-              confident that I’m ready to work as a web developer.
-            </div>
-            <br />
-            <div>
-              I have quite a list of hobbies. My wife calls me a hobby
-              collector. I like playing guitar, piano, sometimes compose songs,
-              watch movies, play billiards (3-cushion), cook Korean food, and
-              make videos.
-            </div>
-            <br />
-            <div>Can’t wait to start my new journey</div>
-            <div>and become the person who “Do what your love”!</div>
             <br />
           </Col>
         </Row>
@@ -205,9 +197,9 @@ const App = () => {
           <Col xl={6} lg={12} className="get-in-touch">
             <div style={{ fontWeight: "bold" }}>Get in Touch</div>
             <br />
-            <div>14220 Conser St. Overland Park, KS 66223</div>
+            <div>1525 Station Center Blvd., Suwanee, GA 30024</div>
             <div>sdymj84@gmail.com</div>
-            <div>913-353-6799</div>
+            <div>816-892-0868</div>
           </Col>
           <Col xl={6} lg={12}>
             <div style={{ fontWeight: "bold" }}>Send Me a Message</div>
