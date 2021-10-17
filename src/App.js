@@ -4,12 +4,8 @@ import styled from "styled-components";
 import Haystax from "./Portfolios/Haystax";
 import JellyTree from "./Portfolios/JellyTree";
 import Apart from "./Portfolios/Apart";
-import TravelBlog from "./Portfolios/TravelBlog";
-import Calculator from "./Portfolios/Calculator";
-import WeeklyWorkNote from "./Portfolios/WeeklyWorkNote";
 import MemoryCardGame from "./Portfolios/MemoryCardGame";
 import me from "./assets/me.jpg";
-import ContactForm from "./ContactForm";
 
 const StyledContainer = styled(Container)`
   .title {
@@ -75,7 +71,10 @@ const DotSeparator = styled.hr`
   margin: 3em auto;
 `;
 const Image = styled.img`
-  width: 100%;
+  width: 300px;
+  border-radius: 50%;
+  height: 300px;
+  object-fit: cover;
 `;
 
 const App = () => {
@@ -84,13 +83,14 @@ const App = () => {
       <Section className="name">
         <TitleName>MINJUN YOUN</TitleName>
         <div style={{ fontSize: 24, color: "#48b8e7", fontWeight: "bold" }}>
-          FULL STACK DEVELOPER
+          {/* FULL STACK DEVELOPER */}
+          REACT DEVELOPER
         </div>
       </Section>
       <Separator />
       <Section className="intro">
         <div>Hi!</div>
-        <div>I’m looking for a Full Stack developer position.</div>
+        <div>I’m looking for a React developer position.</div>
         <div>Please check out my work and feel free to reach me.</div>
       </Section>
       <Separator />
@@ -106,15 +106,6 @@ const App = () => {
         <DotSeparator />
 
         <Apart />
-        <DotSeparator />
-
-        <TravelBlog />
-        <DotSeparator />
-
-        <Calculator />
-        <DotSeparator />
-
-        <WeeklyWorkNote />
         <DotSeparator />
 
         <MemoryCardGame />
@@ -161,12 +152,12 @@ const App = () => {
       <Section className="about">
         <div className="title">About Me</div>
         <Row>
-          <Col xl={6} lg={12}>
+          <Col xl={6} lg={12} style={{ textAlign: "center" }}>
             <Image src={me} alt="My photo" />
           </Col>
           <Col xl={6} lg={12}>
             <br />
-            <div>
+            {/* <div>
               I started my first dev job at the beginning of 2020 as someone
               transitioning from a QA role into product development. I very
               quickly became a productive and indispensable member of the
@@ -182,13 +173,12 @@ const App = () => {
               designing and implementing in React, the new feature that the
               Customer Success team has needed for years.
             </div>
-            <br />
+            <br /> */}
             <div>
-              My manager told me that he has been very impressed with my
-              performance in 2020. I was happy to jump in and help anyone that
-              needs assistance. I have quickly grown from a junior developer to
-              a key member of the Haystax engineering team. My work on the React
-              migration has made me a critical member of the team and our
+              My team and company have been very impressed with my
+              performance in 2020. It took me only one year to become
+              a lead developer from a junior developer. 
+              My work on the React migration has made me a critical member of the team and our
               company’s success is now directly related to my efforts.
             </div>
             <br />
@@ -198,13 +188,13 @@ const App = () => {
 
       <Separator />
 
-      <Section className="contact">
+      {/* <Section className="contact">
         <div className="title">Contact</div>
         <Row>
           <Col xl={6} lg={12} className="get-in-touch">
             <div style={{ fontWeight: "bold" }}>Get in Touch</div>
             <br />
-            <div>1525 Station Center Blvd., Suwanee, GA 30024</div>
+            <div>3406 Long Creek Dr., Buford, GA 30519</div>
             <div>hireminjuny@gmail.com</div>
             <div>816-892-0868</div>
           </Col>
@@ -214,9 +204,9 @@ const App = () => {
             <ContactForm />
           </Col>
         </Row>
-      </Section>
+      </Section> */}
 
-      <Separator />
+      {/* <Separator /> */}
     </StyledContainer>
   );
 };

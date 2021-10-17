@@ -2,43 +2,34 @@ import React from "react";
 import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
 import mcg from "../assets/Memory Card Game.png";
+import StyledContainer from "../components/StyledContainer";
 
-const Container = styled.div`
-  text-align: left;
-  font-weight: 400;
-
-  .link {
-    margin: 1em 0;
-  }
-  a {
-    color: #0a7070;
-    transition: color 0.3s;
-    text-decoration: underline;
-    :hover {
-      text-decoration: none;
-      color: #083b3d;
-    }
-  }
-  .skill {
-    margin: 1em 0;
-  }
-`;
 const Image = styled.img`
   width: 100%;
 `;
 
 const MemoryCardGame = () => {
   return (
-    <Container>
+    <StyledContainer>
       <h2>Memory Card Game</h2>
 
       <div className="link">
         <div>
-          <a href="https://github.com/sdymj84/memory-card-game">Github page</a>
+          <a
+            href="https://github.com/sdymj84/memory-card-game"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github page
+          </a>
         </div>
         <div>
           Demo :{" "}
-          <a href="https://sdymj84.github.io/memory-card-game//">
+          <a
+            href="https://sdymj84.github.io/memory-card-game//"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Memory Card Game
           </a>
         </div>
@@ -55,7 +46,7 @@ const MemoryCardGame = () => {
           <li>HTML, CSS, jQuery</li>
         </ul>
       </div>
-    </Container>
+    </StyledContainer>
   );
 };
 
